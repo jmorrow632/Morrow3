@@ -23,7 +23,7 @@ namespace VikingNS
         public enum Duty
         {
             CRAFTSMAN, 
-            FARMET, 
+            FARMER, 
             SAILOR, 
             WARRIOR
         }

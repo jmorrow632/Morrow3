@@ -42,9 +42,8 @@ namespace VikingNS
         ***  RETURN :  None                                           ***
         ****************************************************************/
 
-        private protected Viking(
+        public Viking(
             string name = "Olaf", 
-            Global.Status status = Global.Status.KARL,
             short health = 100,
             Global.Weapon weapon = Global.Weapon.NONE, 
             bool shield = false)
@@ -64,7 +63,7 @@ namespace VikingNS
         ***  IN/OUT ARGS :  None                                        ***
         ***  RETURN :  Viking instance                                  ***
         ******************************************************************/
-        private protected Viking(Viking viking)
+        public Viking(Viking viking)
         {
             Name = viking.Name;
             Health = viking.Health;
@@ -85,15 +84,11 @@ namespace VikingNS
         ****************************************************************/
         public override string ToString()
         {
-            Console.WriteLine($"Name: {Name}");
-            Console.WriteLine($"Health: {Health}");
-            Console.WriteLine($"Weapon: {Weapon}");
-            Console.WriteLine($"Shield: {Shield}");
 
-            return $"Name: {Name}"
-                 + $"Health: {Health}"
-                 + $"Weapon: {Weapon}"
-                 + $"Shield: {Shield}"
+            return $"Name: {Name}{Environment.NewLine}"
+                 + $"Health: {Health}{Environment.NewLine}"
+                 + $"Weapon: {Weapon}{Environment.NewLine}"
+                 + $"Shield: {Shield}{Environment.NewLine}"
             ;
         }
     }
