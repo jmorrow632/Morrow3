@@ -24,11 +24,10 @@ using System.Diagnostics;
 
 namespace VikingNS
 {
-    public class Viking : IView
+    public class Viking
     {
         public string Name { get; set; }
-        public Global.Status Status { get; set; }
-        public int Health { get; set; }
+        public short Health { get; set; }
         public Global.Weapon Weapon { get; set; }
         public bool Shield { get; set;}
 
@@ -43,15 +42,14 @@ namespace VikingNS
         ***  RETURN :  None                                           ***
         ****************************************************************/
 
-        public Viking(
-            string name = "Bjorn", 
+        private protected Viking(
+            string name = "Olaf", 
             Global.Status status = Global.Status.KARL,
-            int health = 150,
-            Global.Weapon weapon = Global.Weapon.AXE, 
+            short health = 100,
+            Global.Weapon weapon = Global.Weapon.NONE, 
             bool shield = false)
         {
            Name = name;
-           Status = status;
            Health = health;
            Weapon = weapon;
            Shield = shield; 
@@ -66,36 +64,16 @@ namespace VikingNS
         ***  IN/OUT ARGS :  None                                        ***
         ***  RETURN :  Viking instance                                  ***
         ******************************************************************/
-        public Viking(Viking other)
+        private protected Viking(Viking viking)
         {
-            Name = other.Name;
-            Status = other.Status;
-            Health = other.Health;
-            Weapon = other.Weapon;
-            Shield = other.Shield;
+            Name = viking.Name;
+            Health = viking.Health;
+            Weapon = viking.Weapon;
+            Shield = viking.Shield;
         }
 
         /****************************************************************
-        ***  METHOD  ViewH                                            ***
-        *****************************************************************
-        ***  DESCRIPTION :                                            ***
-        ***  Displays Viking properties in horizontal format.         ***
-        ***                                                           ***
-        ***  INPUT ARGS :  None                                       ***    
-        ***  OUTPUT ARGS :  None                                      ***
-        ***  IN/OUT ARGS :  None                                      ***
-        ***  RETURN :  void                                           ***
-        ****************************************************************/
-        public void ViewH()
-        {
-            Console.WriteLine("Name\tStatus\tHealth\tWeapon\tShield");
-            Console.WriteLine("--------------------------------------");
-            Console.WriteLine($"{Name}\t{Status}\t{Health}\t{Weapon}\t{Shield}");
-            Console.WriteLine("");
-        }
-
-        /****************************************************************
-        ***  METHOD  ViewV                                            ***      
+        ***  METHOD  ToString()                                       ***      
         *****************************************************************
         ***  DESCRIPTION :                                            *** 
         ***  Displays Viking properties in vertical format.           ***
@@ -105,13 +83,18 @@ namespace VikingNS
         ***  IN/OUT ARGS :  None                                      ***
         ***  RETURN :  void                                           ***
         ****************************************************************/
-        public void ViewV()
+        public override string ToString()
         {
             Console.WriteLine($"Name: {Name}");
-            Console.WriteLine($"Status: {Status}");
             Console.WriteLine($"Health: {Health}");
             Console.WriteLine($"Weapon: {Weapon}");
             Console.WriteLine($"Shield: {Shield}");
+
+            return $"Name: {Name}"
+                 + $"Health: {Health}"
+                 + $"Weapon: {Weapon}"
+                 + $"Shield: {Shield}"
+            ;
         }
     }
 }
