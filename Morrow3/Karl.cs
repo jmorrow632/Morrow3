@@ -50,9 +50,9 @@ public class Karl : Viking
         short health, 
         Global.Weapon weapon, 
         bool shield,
-        Global.Duty Duty = Global.Duty.FARMER) : base(name, health, weapon, shield)
+        Global.Duty duty = Global.Duty.FARMER) : base(name, health, weapon, shield)
     {
-        Duty = Duty; 
+        this.Duty = duty; 
     }
 
     /******************************************************************
@@ -66,11 +66,11 @@ public class Karl : Viking
     ******************************************************************/
     public Karl(Karl karl) : base(karl)
     {
-        Duty = karl.Duty;
+        this.Duty = karl.Duty;
     }
 
     /******************************************************************
-    ***  METHOD  Karl (Copy Constructor)                            ***
+    ***  METHOD  Override ToString()                                ***
     *******************************************************************
     ***  DESCRIPTION : Returns a formatted string representation    ***
     *** of a Karl object                                            *** 
@@ -81,6 +81,6 @@ public class Karl : Viking
     ******************************************************************/
     public override string ToString()
     {
-        return base.ToString() + $", Duty: {Duty}";
+        return base.ToString() + $"Duty: {Duty}";
     }
 }
