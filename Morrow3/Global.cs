@@ -1,8 +1,8 @@
 /******************************************************************
 *** NAME        : Jessica Morrow, Evan Schwarz, Nathan Crosby   ***
 *** CLASS       : CSC 346                                       ***
-*** ASSIGNMENT  : 2                                             ***
-*** DUE DATE    : 02-23-26                                      ***
+*** ASSIGNMENT  : 3                                             ***
+*** DUE DATE    : 03-05-26                                      ***
 *** INSTRUCTOR  : GAMRADT                                       ***
 *******************************************************************
 *** DESCRIPTION: The assignment uses VSCode to create a user-   ***
@@ -10,7 +10,7 @@
 *** and Global along with an interface named IView and an       ***
 *** appropriate set of C# files.                                ***
 *** This file defines the static class Global containing the    ***
-*** enumerated types "Status" and "Weapon" within the VikingNS  ***
+*** enumerated types "Duty" and "Weapon" within the VikingNS    ***
 *** namespace                                                   ***
 *******************************************************************
 */
@@ -20,16 +20,18 @@ namespace VikingNS
 {
     public static class Global
     {
-        public enum Status
+        public enum Duty
         {
-            JARL, 
-            KARL, 
-            THRALL
+            CRAFTSMAN, 
+            FARMET, 
+            SAILOR, 
+            WARRIOR
         }
        public enum Weapon
         {
             AXE, 
-            SWORD
+            SWORD,
+            NONE
         }
     }
 }
