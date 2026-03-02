@@ -1,21 +1,19 @@
 /******************************************************************
 *** NAME        : Jessica Morrow, Evan Schwarz, Nathan Crosby   ***
 *** CLASS       : CSC 346                                       ***
-*** ASSIGNMENT  : 2                                             ***
-*** DUE DATE    : 02-23-26                                      ***
+*** ASSIGNMENT  : 3                                             ***
+*** DUE DATE    : 03-5-26                                      ***
 *** INSTRUCTOR  : GAMRADT                                       ***
 *******************************************************************
 *** DESCRIPTION: The assignment uses VSCode to create a user-   ***
-*** defined Abstract Data Type using C# Classes named Viking    ***
-*** and Global along with an interface named IView and an       ***
+*** defined Abstract Data Type using C# Classes named Viking,   ***
+*** Karl, and Global along with  an                             ***
 *** appropriate set of C# files.                                ***
 *** This file defines and implements the Viking class           ***
 *** within the VikingNS namespace. The Viking class             ***
-*** describes the following: the current state of an individual Viking ***
-*** instance through auto-implemented properties: Name,         ***
-*** Status, Health, Weapon, and Shield; Fulfills the contract   ***
-*** set by the interface "IView"; Declares and defines a deep   **
-*** copy constructor                                            ***
+*** describes the following: the current state of an individual ***
+*** Viking instance through auto-implemented properties: Name,  ***
+*** Status, Health, Weapon, and Shield;                         ***
 *******************************************************************
 */
 

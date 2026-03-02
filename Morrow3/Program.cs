@@ -13,34 +13,7 @@
 *** Default, paramaterized, and copy.                           ***
 *** and three instances of the Karl class;                      ***
 *** Default, paramaterized, and copy.                           ***
-*******************************************************************
-*/
-
-
-
-/* using VikingNS;
-
-class Program
-{
-    static void Main()
-    {
-        Viking vDefault = new Viking();
-
-        Viking Karl = new Viking(Vikings.Karl);
-        Viking copy = new Viking(Karl);
-    }
-} */
-
-/// /////////////////////////////////////////////////////////////////////////////
-/// File:        Program.cs
-/// Description: Driver/test program for the VikingNS namespace. Demonstrates
-///              the Viking, Karl, and Global ADT classes. This file will be
-///              replaced by the instructor's test program.
-/// Author:      [Your Name]
-/// Course:      CSC 346
-/// Assignment:  Assignment 3
-/// Date:        2026-02-27
-/// /////////////////////////////////////////////////////////////////////////////
+*******************************************************************/
 
 using VikingNS;
 
