@@ -2,7 +2,7 @@
 *** NAME        : Jessica Morrow, Evan Schwarz, Nathan Crosby   ***
 *** CLASS       : CSC 346                                       ***
 *** ASSIGNMENT  : 3                                             ***
-*** DUE DATE    : 03-5-26                                      ***
+*** DUE DATE    : 03-04-26                                      ***
 *** INSTRUCTOR  : GAMRADT                                       ***
 *******************************************************************
 *** DESCRIPTION: The assignment uses VSCode to create a user-   ***
