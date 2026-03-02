@@ -6,12 +6,16 @@
 *** INSTRUCTOR  : GAMRADT                                       ***
 *******************************************************************
 *** DESCRIPTION: The assignment uses VSCode to create a user-   ***
-*** defined Abstract Data Type using C# Classes named Viking    ***
-*** and Global along with an interface named IView and an       ***
+*** defined Abstract Data Type using C# Classes named Viking,   ***
+*** Karl, and Global along with an                              ***
 *** appropriate set of C# files.                                ***
-***     ***
-***     ***
-***                                                    ***
+*** This file defines and implements the Karl class             ***
+*** within the KarlNS namespace. The Karl class                 ***
+*** describes the following: the current state of an individual ***
+*** Viking instance through auto-implemented properties: Name,  ***
+*** Health, Weapon, and Shield;                                 ***
+***                                                             ***
+***                                                             ***
 *******************************************************************
 */
 
